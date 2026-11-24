@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Keuangan Pribadi</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #101827;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 22px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100dvh - 75px);
+      border: 0;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <header>💰 Keuangan Pribadi</header>
+
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbwq-Q8sleRnGfVuSb1zunsOae2UrWj_jo9jNV64D_71G17hYrZh7O8Ng_xl80NVuCPrIw/exec"
+    allow="clipboard-write">
+  </iframe>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  </script>
+</body>
+</html>
